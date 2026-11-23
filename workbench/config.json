@@ -1,7 +1,6 @@
 {
   "mode": "snapshot",
-  "smsApiBase": "",
   "repo": "https://github.com/vivarium-collective/viva-comets",
-  "commit": "050474a43fc057820d9cab3938643efa042bb2a4",
+  "commit": "334f2f7844ca9c780e2db8dbf6dbc879d1466242",
   "generated_from_ref": "main"
 }
