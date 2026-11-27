@@ -38,5 +38,11 @@ vivarium-workbench = { git = "https://github.com/vivarium-collective/vivarium-wo
 [tool.setuptools.packages.find]
 include = ["pbg_comets*"]
 
+[tool.setuptools.package-data]
+# Ship the declarative composite specs so a pinned/wheel install can still
+# resolve `pbg_comets.composites.<stem>` (the dashboard composite resolver and
+# `build_composite()` read these from the installed package).
+"pbg_comets.composites" = ["*.composite.yaml"]
+
 [project.scripts]
 viva-comets = "pbg_comets.cli.__main__:main"
